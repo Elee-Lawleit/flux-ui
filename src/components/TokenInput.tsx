@@ -28,7 +28,7 @@ export const TokenInput = ({
 
     setIsTokenSaving(true);
     try {
-      const response = await axiosInstance.post("/start-app", null, {
+      await axiosInstance.post("/start-app", null, {
         params: { token },
       });
       toast.success("App started successfully.");
