@@ -31,7 +31,7 @@ export const TokenInput = ({
       await axiosInstance.post("/start-app", null, {
         params: { token },
       });
-      toast.success("App started successfully.");
+      toast.success("App starting...");
       onTokenUpdate(token);
     } catch (error) {
       console.error("Error saving token:", error);
